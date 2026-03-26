@@ -64,14 +64,14 @@ public class Gato01 extends JFrame implements ActionListener {
             }
         }
 
-        // primero validar ganador
+        // Primero validar ganador
         if (hayGanador()) {
             JOptionPane.showMessageDialog(this, "Ganó " + letra);
             desactivarTablero();
             return;
         }
 
-        // luego validar empate (solo si no ganó nadie)
+        // Luego validar empate (solo si no ganó nadie)
         if (hayEmpate()) {
             JOptionPane.showMessageDialog(this, "Empate");
             desactivarTablero();
